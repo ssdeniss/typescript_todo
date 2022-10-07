@@ -1,0 +1,22 @@
+.navigation {
+    background-color: cornflowerblue;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    &__content {
+        display: flex;
+    }
+    &__logo {
+        font-size: 24px;
+    }
+    &__links {
+        display: flex;
+        gap: 30px;
+        font-size: 16px;
+        margin-left: auto;
+    }
+    &__link {
+        cursor: pointer;
+    }
+}

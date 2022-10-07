@@ -1,0 +1,26 @@
+.form {
+  margin: 100px auto;
+  width: 500px;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  flex-direction: column-reverse;
+}
+.form__label {
+  margin-bottom: 10px;
+}
+.form__input {
+  width: 100%;
+}
+.form__top {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+.form__btn {
+  background-color: antiquewhite;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+}/*# sourceMappingURL=TodoForm.css.map */
