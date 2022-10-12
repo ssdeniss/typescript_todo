@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
 
-const TodoForm = () => {
+interface TodoFormProps {
+    addTodo(title: string): void
+}
+
+const TodoForm: React.FC<TodoFormProps> = props => {
     const [todo, setTodo] = useState<string>('')
     const todoHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         setTodo(e.target.value)
     }
     const postTodo = () => {
-        console.log(todo)
+        props.addTodo(todo)
         setTodo('')
     }
     return (

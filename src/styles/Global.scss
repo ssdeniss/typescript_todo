@@ -4,8 +4,47 @@
     padding: 0 10px;
     width: 100%;
 }
-input{
+
+input {
     height: 44px;
     padding: 0 10px;
     outline: none;
+}
+
+.todo {
+    &__items {
+        padding: 30px !important;
+        background: #ddd;
+        margin-bottom: 100px;
+    }
+
+    &__item {
+        background-color: #fff;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+
+    &__title {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+    &__delete {
+        margin-left: auto;
+        color: red;
+        cursor: pointer;
+        transition: all .3s;
+        opacity: 1;
+        &:hover{
+            transition: all .3s;
+            opacity: 0.5;
+        }
+    }
+    &__item.completed{
+        background-color: greenyellow !important;
+    }
+
 }
